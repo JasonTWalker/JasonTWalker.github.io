@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualisation Dashboard | Jason Walker</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Jason Walker</h1>
+            <ul class="nav-links">
+                <li><a href="../index.html">About</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="project-page">
+
+
+        <section class="project-header">
+            <h2>Handling Missing Data with Statistical and ML-Based Imputation</h2>
+            <p class="project-subtitle">
+                This project explores different data imputation techniques. The notebook compares statistical and machine-learning based approaches, 
+                evaluating their performance against the complete dataset. 
+            </p>
+
+            <div class="project-buttons">
+                <a href="https://github.com/JasonTWalker/DataImputationHousingPrices" class="primary-button" target="_blank">
+                    View GitHub Repository
+                </a>
+            </div>
+        </section>
+
+       
+
+        <section class="project-section">
+            <h3>Project Overview</h3>
+            <p>
+                This project explores the impact of different imputation techniques on a real-world dataset containing naturally occurring missing values (California Housing). 
+                The aim was to evaluate how statistical and machine learning-based imputers affect dataset structure, feature relationships, and downstream model performance.
+            </p>
+            <p>
+                Exploratory Data Analysis (EDA) was conducted to assess missingness patterns and feature correlations, using scatter plot matrices and correlation analysis to guide the choice of imputation strategies. 
+                Feature engineering was also applied to cumulative variables such as total_rooms, total_bedrooms, and population by converting them into per-household averages to better reflect the underlying data structure.
+            </p>
+            <p>
+                Multiple imputation approaches were implemented and systematically benchmarked against a cleaned baseline dataset using regression metrics (R², MAE, and MSE). 
+                This allowed evaluation of how each method influenced predictive performance rather than relying solely on visual distribution comparisons.
+            </p>
+        </section>
+
+
+        <section class="project-section">
+            <h3>Data Processing & Methodology</h3>
+            <ul>
+                <li>Analysis of missing data patterns in a real-world dataset</li>
+                <li>Correlation-guided imputation strategy using scatter plot matrices</li>
+                <li>Feature engineering on cumulative housing variables to improve data representation</li>
+                <li>Implementation of KNN Imputation and MICE (Iterative Imputers)</li>
+                <li>Comparison of different MICE estimators (Bayesian Ridge and Decision Tree)</li>
+                <li>Benchmarking imputed datasets against a cleaned baseline</li>
+                <li>Evaluation using regression metrics (R², MAE, MSE)</li>
+                <li>Visual validation of feature distributions and relationships before and after imputation</li>
+
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h3>Why This Matters</h3>
+            <p>
+                Missing data is a common challenge in real-world datasets and can significantly affect analytical reliability and model performance. 
+                Different imputation techniques make different statistical assumptions, which may not always align with the structure and constraints of the data.
+            </p>
+            <p>
+                This project demonstrates that there is no one-size-fits-all approach to imputation. For example, Bayesian Ridge imputation occasionally produced unrealistic negative values for inherently non-negative housing features, highlighting the limitations of linear model-based estimators when applied to bounded real-world data. 
+                Despite this, comparative benchmarking showed that different methods preserved dataset structure and predictive performance to varying degrees.
+            </p>
+            <p>
+                By validating imputation outcomes using both visual analysis and regression-based evaluation, the project reflects a data preprocessing workflow where method selection is guided by data structure, model assumptions, and performance rather than default imputation choices.
+            </p>
+        </section>
+
+
+
+        <section class="project-section">
+            <h3>Technologies Used</h3>
+            <div class="tech-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">Matplotlib</span>
+                <span class="tag">Scikit-Learn</span>
+                <span class="tag">Seaborn</span>
+                <span class="tag">Jupyter</span>
+            </div>
+
+        </section>
+
+        <section class="project-section">
+            <h3>Data Source</h3>
+            <p></p>
+                <a href="https://raw.githubusercontent.com/PaoloMissier/CSC3831-2021-22/main/IMPUTATION/TARGET-DATASETS/CORRUPTED/HOUSES/houses_0.5_MAR.csv" class="primary-button" target="_blank"> California Housing Prices</a>
+        </section>
+
+    </main>
+
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualisation Dashboard | Jason Walker</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Jason Walker</h1>
+            <ul class="nav-links">
+                <li><a href="../index.html">About</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="project-page">
+
+
+        <section class="project-header">
+            <h2>Global Data Visualisation Dashboard</h2>
+            <p class="project-subtitle">
+                Interactive dashboard for the analysis of OECD member countries. 
+            </p>
+
+            <div class="project-buttons">
+                <a href="https://github.com/JasonTWalker/OECDBetterLifeIndexVisualisation" class="primary-button" target="_blank">
+                    View GitHub Repository
+                </a>
+            </div>
+        </section>
+
+
+        <section class="dashboard-section">
+            <h3>Interactive Dashboard</h3>
+
+            <iframe 
+                src="../data/oecd-dashboard.html" 
+                class="dashboard-frame">
+            </iframe>
+
+            <div class="dashboard-actions">
+                <a href="../data/oecd-dashboard.html" 
+                class="primary-button" 
+                target="_blank">
+                View Full Dashboard (Standalone HTML)
+                </a>
+            </div>
+        </section>
+
+
+        <section class="project-section">
+            <h3>Project Overview</h3>
+            <p>
+                This project presents an interactive data visualisation dashboard
+                built to explore global development indicators across 40+ countries.
+                The dashboard allows users to compare countries through multiple
+                metrics including life satisfcation, water quality, air pollution, life expectancy and more.
+            </p>
+        </section>
+
+
+        <section class="project-section">
+            <h3>Data Processing & Methodology</h3>
+            <ul>
+                <li>Data wrangling performed using Python and Pandas</li>
+                <li>Cleaning and preprocessing conducted in Jupyter Notebooks</li>
+                <li>Dataset transformation for visual encoding</li>
+                <li>Integration with GeoPandas for world map visualisation</li>
+                <li>Metrics transformed to show measurement unit</li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h3>Key Features</h3>
+            <ul>
+                <li>Interactive world map with country selection</li>
+                <li>Comparative visual analytics across multiple indicators</li>
+                <li>Dynamic filtering and user-driven exploration</li>
+                <li>Cleaned dataset pipeline from raw Excel data</li>
+                <li>Exported as standalone HTML file for simple embeddings</li>
+            </ul>
+        </section>
+
+
+        <section class="project-section">
+            <h3>Technologies Used</h3>
+            <div class="tech-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">Altair</span>
+                <span class="tag">GeoPandas</span>
+                <span class="tag">Jupyter</span>
+                <span class="tag">Excel</span>
+            </div>
+
+        </section>
+
+        <section class="project-section">
+            <h3>Data Source</h3>
+            <p></p>
+                <a href="https://www.oecd.org/en/data/datasets/oecd-DE.html" class="primary-button" target="_blank"> OECD Better Life Index</a>
+        </section>
+
+    </main>
+
+
+</body>
+</html>
