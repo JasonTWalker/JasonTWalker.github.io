@@ -1,0 +1,294 @@
+/* ===== GLOBAL STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0f172a; /* Dark background */
+    color: #e5e7eb;
+    line-height: 1.6;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    background-color: #020617;
+    border-bottom: 1px solid #1f2933;
+    padding: 1rem 0;
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f9fafb;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #cbd5f5;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #60a5fa;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 2rem;
+}
+
+.about-section {
+    max-width: 700px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    color: #f9fafb;
+}
+
+.bio {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    color: #cbd5f5;
+}
+
+/* ===== BUTTON ===== */
+.buttons {
+    margin-top: 2rem;
+}
+
+.primary-button {
+    text-decoration: none;
+    background-color: #2563eb;
+    color: white;
+    padding: 0.8rem 1.6rem;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.primary-button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 1px solid #1f2933;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+/* ===== PROJECTS PAGE ===== */
+.projects-main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding-bottom: 2rem;
+}
+
+.projects-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.projects-header h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: #f9fafb;
+}
+
+.projects-header p {
+    color: #94a3b8;
+    font-size: 1.1rem;
+}
+
+/* ===== FEATURED PROJECT ===== */
+.featured-label {
+    margin-bottom: 1rem;
+    color: #60a5fa;
+    font-size: 1.4rem;
+}
+
+.featured-card {
+    background-color: #020617;
+    border: 1px solid #1f2933;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.featured-card:hover {
+    transform: translateY(-4px);
+    border-color: #2563eb;
+}
+
+.featured-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+/* ===== PROJECT GRID ===== */
+.section-title {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    color: #f9fafb;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+/* ===== INDIVIDUAL PROJECT CARD ===== */
+.project-card {
+    background-color: #020617;
+    border: 1px solid #1f2933;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+    margin-bottom: 0.8rem;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    border-color: #2563eb;
+}
+
+.project-card h4 {
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+    color: #f9fafb;
+}
+
+.project-card p {
+    color: #cbd5f5;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+/* ===== TECH STACK TEXT ===== */
+.tech-stack {
+    font-size: 0.95rem;
+    color: #94a3b8;
+}
+
+/* ===== BUTTONS ===== */
+.project-buttons {
+    display: flex;
+    gap: 12px;      
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.secondary-button {
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid #2563eb;
+    color: #60a5fa;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.secondary-button:hover {
+    background-color: #2563eb;
+    color: white;
+}
+
+/* Disabled button (for projects without links yet) */
+.disabled {
+    opacity: 0.6;
+    cursor: default;
+    pointer-events: none;
+}
+
+
+/* ===== TECH TAGS (CHIPS) ===== */
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.tag {
+    background-color: rgba(37, 99, 235, 0.15);
+    color: #93c5fd;
+    border: 1px solid rgba(37, 99, 235, 0.4);
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.project-page {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.project-header {
+    margin-bottom: 40px;
+}
+
+.project-subtitle {
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+.project-section {
+    margin-bottom: 40px;
+}
+
+.dashboard-section {
+    margin: 40px 0;
+}
+
+
+
+.dashboard-frame {
+    width: 100%;
+    height: 90vh;
+    min-height: 700px;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.dashboard-actions {
+    margin-top: 20px;
+    text-align: center;
+}
